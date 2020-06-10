@@ -24,7 +24,8 @@ import pytest
 # TODO(https://github.com/intentionet/netconan/issues/3):
 # Add in additional test lines (these are just first pass from IOS)
 cisco_password_lines = [
-    (' password 7 {}', '122A00190102180D3C2E'),
+    (' password 7 {}', '122A00190102180D3C2E'),  # intentional leading space
+    ('PASSword 7 {}', '122A00190102180D3C2E'),  # intentional mixed case
     ('username Someone password 0 {}', 'RemoveMe'),
     ('username Someone password {}', 'RemoveMe'),
     ('username Someone password 7 {}', '122A00190102180D3C2E'),
