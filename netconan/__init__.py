@@ -19,4 +19,4 @@ __name__ = "netconan"
 
 __url__ = "https://github.com/intentionet/netconan"
 
-__version__ = "0.13.5.dev"
+__version__ = "0.13.5.nsv"
