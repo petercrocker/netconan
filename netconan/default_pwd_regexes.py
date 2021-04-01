@@ -51,7 +51,7 @@
 default_pwd_line_regexes = [
     [(r"(?P<prefix>set (password|pksecret)( ENC)? )(\S+)", 4)],
     [(r"(?P<prefix>(password|passwd)( level \d+)?( \d+)? )(\S+)", 5)],
-    [(r"(?P<prefix>username( \S+)+ ssh-(rsa|dsa) )(\S+ \S+)", 5)],
+    [(r"(?P<prefix>username( \S+)+ ssh-(rsa|dsa) )(\S+ \S+)", None)],
     [(r"(?P<prefix>username( \S+)+ (password|secret)( \d| sha512)? )(\S+)", 5)],
     [(r"(?P<prefix>(enable )?secret( \d)? )(\S+)", 4)],
     [(r"(?P<prefix>ip ftp password( \d)? )(\S+)", 3)],
