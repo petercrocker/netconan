@@ -268,9 +268,9 @@ def _anonymize_value(raw_val, lookup, reserved_words):
         # identify anonymized lines
         anon_val = md5_crypt.using(salt="0" * old_salt_size).hash(anon_val)
 
-    if item_format == _sensitive_item_formats.sha512:
-        # Hash anon_val w/standard rounds=5000 to omit rounds parameter from hash output
-        anon_val = sha512_crypt.using(rounds=5000).hash(anon_val)
+    # if item_format == _sensitive_item_formats.sha512:
+    #     # Hash anon_val w/standard rounds=5000 to omit rounds parameter from hash output
+    #     anon_val = sha512_crypt.using(rounds=5000).hash(anon_val)
 
     if item_format == _sensitive_item_formats.juniper_type9:
         # TODO(https://github.com/intentionet/netconan/issues/16)
