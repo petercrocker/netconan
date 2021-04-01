@@ -19,4 +19,4 @@ __name__ = "netconan-nsv"
 
 __url__ = "https://github.com/petercrocker/netconan"
 
-__version__ = "0.13.5.nsv"
+__version__ = "1.0a1"
