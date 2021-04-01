@@ -43,8 +43,8 @@ setup(
     # The project's main homepage.
     url=about["__url__"],
     # Author details
-    author="Intentionet",
-    author_email="netconan-dev@intentionet.com",
+    author="Pete Crocker",
+    author_email="pete@petecrocker.com",
     # Choose your license
     license="Apache License 2.0",
     # What does your project relate to?

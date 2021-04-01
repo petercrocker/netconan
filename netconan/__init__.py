@@ -15,8 +15,8 @@
 
 __desc__ = "Netconan network configuration anonymization utilities"
 
-__name__ = "netconan"
+__name__ = "netconan-nsv"
 
-__url__ = "https://github.com/intentionet/netconan"
+__url__ = "https://github.com/petercrocker/netconan"
 
 __version__ = "0.13.5.nsv"
