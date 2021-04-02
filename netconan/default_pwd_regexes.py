@@ -49,6 +49,9 @@
 # Some of these regexes need to be updated to support quote enclosed passwords
 # which is allowed for at least some syntax on Juniper devices
 default_pwd_line_regexes = [
+    # For Cumulus NCLU
+    [(r"(?P<prefix>net add bgp neighbor( \S+)+ password )(\S+)", None)],
+    # For Cisco / Arista
     [(r"(?P<prefix>set (password|pksecret)( ENC)? )(\S+)", 4)],
     [(r"(?P<prefix>(password|passwd)( level \d+)?( \d+)? )(\S+)", 5)],
     [(r"(?P<prefix>username( \S+)+ ssh-(rsa|dsa) )(\S+ \S+)", None)],
